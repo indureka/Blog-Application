@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import CreateBlog from "./pages/CreateBlog";
-import MyBlogs from "./pages/MyBlogs";
+import MyBlogPost from "./pages/MyBlogPost";
 import EditBlog from "./pages/EditBlog";
 import Blogs from "./pages/Blogs";
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/createBlog" element={<CreateBlog />} />
-        <Route path="/myBlogs" element={<MyBlogs />} />
+        <Route path="/myBlogs" element={<MyBlogPost />} />
         <Route path="/editBlog/:id" element={<EditBlog />} />
       </Routes>
      </Router>

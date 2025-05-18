@@ -11,7 +11,6 @@ const BlogCard=({blog, user})=>{
         const token = localStorage.getItem("token");
         await axios.delete(
         `${backendUrl}/blogs/deleteBlog/${blog._id}`,
-      // await axios.delete(`http://localhost:5000/blogs/deleteBlog/${blog._id}`,
         {
         headers: {
           Authorization: `Bearer ${token}`,

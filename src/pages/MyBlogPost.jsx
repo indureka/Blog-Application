@@ -6,7 +6,7 @@ import BlogCard from '../components/BlogCard';
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 
-const MyBlogs=()=>{
+const MyBlogPost=()=>{
     const [myBlogs,setMyBlogs] = useState([]);
     const [user, setUser] = useState(null);
   const navigate = useNavigate();
@@ -69,4 +69,4 @@ const MyBlogs=()=>{
 
 }
 
-export default MyBlogs;
+export default MyBlogPost;

@@ -19,8 +19,7 @@ const SearchFilter = ({ user }) => {
   const fetchAllBlogs = async () => {
     try {
       const res = await axios.get(`${backendUrl}/blogs/getAllBlogs`);
-
-      // const res = await axios.get("http://localhost:5000/blogs/getAllBlogs");
+      
       const data = res.data;
       setBlogs(data);
 
@@ -39,9 +38,7 @@ const SearchFilter = ({ user }) => {
       if (selectedAuthor) query += `author=${selectedAuthor}&`;
       if (selectedCategory) query += `category=${selectedCategory}`;
 
-      // const res = await axios.get(
-      //   `http://localhost:5000/blogs/filteredBlogs?${query}`
-      // );
+   
 
       const res = await axios.get(`${backendUrl}/blogs/filteredBlogs?${query}`);
 

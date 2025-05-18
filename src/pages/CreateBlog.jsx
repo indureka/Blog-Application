@@ -16,8 +16,7 @@ const CreateBlog=()=>{
         const blogData={title, category, author, content, image};
         try {
             const token=localStorage.getItem("token");
-            // const res=await axios.post("http://localhost:5000/blogs/createBlog",blogData, {
-
+           
             const res = await axios.post(`${backendUrl}/blogs/createBlog`, blogData, {
                 headers: {
                     "Authorization":`Bearer ${token}` 

@@ -44,7 +44,7 @@ const EditBlog=()=>{
         try {
             const blogData={title, category, author, image};
             const token=localStorage.getItem("token");
-            // const res=await axios.put(`http://localhost:5000/blogs/updateBlog/${id}`,blogData, {
+           
 
             const res = await axios.put(`${backendUrl}/blogs/updateBlog/${id}`, blogData, {
                 headers: {

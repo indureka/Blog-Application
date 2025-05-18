@@ -14,7 +14,6 @@ const Login=()=>{
     const handleLogin=async(e)=>{
         e.preventDefault();
         try {
-        // const res=await axios.post("http://localhost:5000/auth/login", {
 
         const res = await axios.post(`${backendUrl}/auth/login`, {
             email,

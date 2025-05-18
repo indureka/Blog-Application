@@ -15,7 +15,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL, // Use your FRONTEND_URL from .env for CORS
+  origin: [
+  process.env.FRONTEND_URL, 
+    'https://enchanting-croissant-c415ac.netlify.app'
+  ],
   credentials: true,
 }));
 
