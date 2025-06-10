@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navbar=()=>{
-
     const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
