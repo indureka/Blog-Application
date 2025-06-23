@@ -5,7 +5,6 @@ import BlogCard from '../components/BlogCard';
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
-
 const MyBlogs=()=>{
     const [myBlogs,setMyBlogs] = useState([]);
     const [user, setUser] = useState(null);
